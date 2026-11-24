@@ -379,7 +379,8 @@ ul{margin:0; padding:0; list-style:none}
 .visit-body h3{font-family:var(--serif-kr); font-size:21px; font-weight:600; color:var(--navy); margin-bottom:20px}
 .visit-info > div{display:grid; grid-template-columns:72px 1fr; gap:12px; padding:12px 0; border-top:1px solid var(--line); align-items:baseline}
 .visit-info dt{font-size:12px; letter-spacing:.1em; color:var(--gold); padding-top:2px}
-.visit-info dd{font-size:14.5px; color:var(--text); line-height:1.6}
+.visit-info dd{font-size:14.5px; color:var(--text); line-height:1.6; word-break:keep-all}
+.visit-info .nowrap{white-space:nowrap}
 .visit-hours{margin-top:20px; border-top:1px solid var(--line)}
 .visit-hours > div{display:grid; grid-template-columns:72px 1fr; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); align-items:baseline}
 .visit-hours dt{font-size:12px; letter-spacing:.1em; color:var(--muted)}
