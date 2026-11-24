@@ -60,7 +60,7 @@
     lbImg.src = src;
     lbImg.alt = inner ? inner.alt : '';
     lbCap.textContent = btn.getAttribute('data-caption') || (inner ? inner.alt : '');
-    lbOpen.href = src;
+    lbOpen.href = btn.getAttribute('data-full') || src;
     lbTrigger = btn;
     lightbox.hidden = false;
     document.body.classList.add('lb-open');
@@ -651,6 +651,14 @@
   } else {
     revealEls.forEach(function (el) { el.classList.add('in'); });
   }
+
+  /* ---------------- 주택형 평면도 미리 불러오기 ---------------- */
+  window.addEventListener('load', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('.type-panel[hidden] .type-plan img'), function (img) {
+      var pre = new Image();
+      pre.src = img.getAttribute('src');
+    });
+  });
 
   /* ---------------- 초기화 ---------------- */
   renderCalendar();
