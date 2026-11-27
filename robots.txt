@@ -1,4 +1,64 @@
+# 제일풍경채 첨단3지구 A6BL 분양 안내 — 모든 검색엔진·AI 크롤러 허용
+# 사이트맵: https://apartmentman.github.io/Jeil-cheomdan3/sitemap.xml
+
+# 전체 허용
 User-agent: *
+Allow: /
+
+# 검색엔진
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daum
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI 검색·생성엔진 크롤러
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://apartmentman.github.io/Jeil-cheomdan3/sitemap.xml
