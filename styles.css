@@ -769,15 +769,15 @@ section[id], div[id]{scroll-margin-top:calc(var(--header-h) + 18px)}
 .type-table-note{max-width:980px; margin:12px auto 0; font-size:12.5px; line-height:1.7; color:var(--muted)}
 .type-table-note a{color:var(--navy); font-family:var(--serif-en); letter-spacing:.03em}
 
-.reserve-steps{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; list-style:none; margin:0 0 32px; padding:0; counter-reset:none}
+.reserve-steps{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; list-style:none; margin:0 0 32px; padding:0; counter-reset:none}
 .reserve-steps li{display:flex; align-items:center; gap:12px; background:#fff; border:1px solid var(--line); padding:14px 16px}
 .reserve-steps b{flex:none; width:26px; height:26px; border-radius:50%; background:var(--navy); color:#fff; display:grid; place-items:center; font-family:var(--serif-en); font-size:11.5px; font-weight:600; letter-spacing:.02em}
 .reserve-steps span{font-size:12.5px; font-weight:500; color:var(--navy); line-height:1.5}
 
-.foot-info{margin-top:26px; padding-top:22px; border-top:1px solid var(--line); display:grid; gap:7px}
-.foot-info p{font-size:12px; line-height:1.75; color:var(--muted)}
-.foot-info b{display:inline-block; min-width:74px; color:var(--navy); font-weight:600}
-.foot-info a{color:var(--navy)}
+.foot-info{margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,.1); display:grid; gap:6px}
+.foot-info p{font-size:12px; line-height:1.8; color:rgba(255,255,255,.55)}
+.foot-info b{display:inline-block; min-width:74px; margin-right:6px; color:var(--gold-soft); font-weight:500}
+.foot-info a{color:rgba(255,255,255,.85); border-bottom:1px solid rgba(255,255,255,.25)}
 
 @media (max-width:760px){
   .reserve-steps{grid-template-columns:1fr 1fr; gap:8px; margin-bottom:24px}
